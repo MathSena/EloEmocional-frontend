@@ -1,0 +1,45 @@
+.container {
+    height: 100%;
+}
+
+.sidenav {
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(115,139,185,1) 0%, rgba(83,129,180,1) 50%, rgba(41,91,126,1) 100%);
+}
+
+img {
+    width: 100%;
+    height: 7rem;
+    margin: .8rem auto 1rem auto;
+}
+
+.sidenav a {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adiciona transição suave para cor e transformação */
+}
+
+.sidenav a:hover, .sidenav a:focus {
+    color: #FFD700; /* Muda a cor do texto ao passar o mouse ou focar */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do item ao passar o mouse ou focar */
+    text-decoration: none; /* Remove qualquer sublinhado de texto ao passar o mouse */
+}
+
+.sidenav i {
+    margin-right: .6rem;
+    transition: color 0.3s ease-in-out; /* Adiciona transição suave para cor */
+}
+
+.sidenav i:hover, .sidenav i:focus {
+    color: #FFD700; /* Muda a cor do ícone ao passar o mouse ou focar */
+}
+
+.menu {
+    margin: 1rem 0 0 1rem;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(115,139,185,1) 0%, rgba(83,129,180,1) 50%, rgba(41,91,126,1) 100%);
+    transition: background 0.3s ease-in-out; /* Adiciona transição suave para o background */
+}
+
+.menu:hover, .menu:focus {
+    background: linear-gradient(180deg, rgba(41,91,126,1) 0%, rgba(83,129,180,1) 50%, rgba(115,139,185,1) 100%); /* Inverte as cores do gradiente ao passar o mouse ou focar */
+}
