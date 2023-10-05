@@ -1,0 +1,64 @@
+.custom-panel {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    overflow: hidden; /* Adicionado para lidar com animações de filhos */
+}
+
+.custom-panel header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.custom-panel img {
+    width: 35%;
+    margin: 16px auto;
+    display: block;
+    transition: transform 0.5s ease-in-out; /* Adicionado para animação */
+}
+
+.custom-panel img:hover {
+    transform: scale(1.1); /* Adicionado para animação */
+}
+
+.custom-panel .content {
+    padding: 16px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+.animated-title, .animated-subtitle, .animated-img, .animated-text {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated-title {
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+}
+
+.animated-subtitle {
+    animation-name: fadeIn;
+    animation-delay: 1s;
+}
+
+.animated-img {
+    animation-name: slideIn;
+    animation-delay: 1.5s;
+}
+
+.animated-text {
+    animation-name: fadeIn;
+    animation-delay: 2s;
+}
