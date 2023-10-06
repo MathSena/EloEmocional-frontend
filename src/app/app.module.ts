@@ -26,6 +26,20 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PsychologistListComponent } from './components/psychologist/psychologist-list/psychologist-list.component';
+import { PsychologistCreateComponent } from './components/psychologist/psychologist-create/psychologist-create.component';
+import { PsychologistDeleteComponent } from './components/psychologist/psychologist-delete/psychologist-delete.component';
+import { PsychologistUpdateComponent } from './components/psychologist/psychologist-update/psychologist-update.component';
+import { SessionCreateComponent } from './components/session/session-create/session-create.component';
+import { SessionDeleteComponent } from './components/session/session-delete/session-delete.component';
+import { SessionListComponent } from './components/session/session-list/session-list.component';
+import { SessionUpdateComponent } from './components/session/session-update/session-update.component';
+import { PatienteCreateComponent } from './components/patiente/patiente-create/patiente-create.component';
+import { PatienteUpdateComponent } from './components/patiente/patiente-update/patiente-update.component';
+import { PatienteListComponent } from './components/patiente/patiente-list/patiente-list.component';
+import { PatienteDeleteComponent } from './components/patiente/patiente-delete/patiente-delete.component';
+import { LoginComponent } from './components/login/login.component';
+import {ToastrModule} from "ngx-toastr";
 
 
 
@@ -34,7 +48,20 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    PsychologistListComponent,
+    PsychologistCreateComponent,
+    PsychologistDeleteComponent,
+    PsychologistUpdateComponent,
+    SessionCreateComponent,
+    SessionDeleteComponent,
+    SessionListComponent,
+    SessionUpdateComponent,
+    PatienteCreateComponent,
+    PatienteUpdateComponent,
+    PatienteListComponent,
+    PatienteDeleteComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +83,12 @@ import { HeaderComponent } from './components/header/header.component';
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    ToastrModule.forRoot({
+      timeOut: 4000,
+      closeButton: true,
+      progressBar: true
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class NavComponent implements OnInit {
 
   constructor(
-      private router: Router) { }
+      private router: Router,
+      private toast: ToastrService) { }
 
   ngOnInit(): void {
     this.router.navigate(['/home']);
